@@ -1,0 +1,46 @@
+.decision-progress-bar {
+	position:fixed; z-index:100; width:20%; bottom:0; height:100%; background:$blue; margin-left:-20%;
+	div {
+		position:absolute; right:0; margin-right:-10%;
+		border-left: 10% solid transparent; border-right: 10% solid transparent; border-bottom: 20% solid red;
+	}
+	ul {
+		width:100%; height:100%;
+		li {
+			text-align:center; display:block; width:100%; height:33.34%; background:$lightGray; overflow:hidden;
+			position:relative;
+			a {
+				width:100%; height:100%; display:block; text-decoration:none; color:$black;
+				h3 {
+					padding:20px; font-size:30px; font-family:$tradeGothic; font-style:normal;
+					position:relative; top:50%; @include transform(translateY(-50%));
+					text-transform: uppercase; z-index:1;
+				}
+			}
+			span {
+				position:absolute; width:0; height:0; background:$blueShade; margin-top:50%; overflow:hidden;
+				z-index: 0;
+				@include border-top-radius(50%); @include border-right-radius(50%);
+				@include border-bottom-radius(50%); @include border-left-radius(50%);
+			}
+			&:nth-child(1) {
+				background: $gray;
+				a {
+					color:$white;
+				}
+			}
+			&:nth-child(2) { 
+				background: $mediumGray;
+				a {
+					color:$lightGray;
+				}
+			}
+			&:nth-child(3) {
+				background: $darkGray;
+				a {
+					color:$gray;
+				}
+			}
+		}
+	}
+}

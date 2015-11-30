@@ -1,0 +1,57 @@
+// Vertical Rhythm
+$base-font-size: 18px;
+$basepx: 18;
+$base-line-height: 24px;
+//@include establish-baseline;
+
+
+// Grid
+@import "neat/neat-helpers";
+// $visual-grid: true;
+// Change the grid settings
+//$column: 95px;
+//$gutter: 20px;
+
+$grid-columns: 12;
+$max-width: 1270px;
+
+// Define your breakpoints
+$mobile: new-breakpoint(max-width 480px 4);
+$mobile_landscape: new-breakpoint(max-width 320px 4);
+
+$pre_mobile: new-breakpoint(max-width 600px 4);
+
+$smaller_than_tablet: new-breakpoint(max-width 767px 8); // more descriptive name than small_tablet
+$tablet: new-breakpoint(max-width 768px 8);
+
+$large_tablet: new-breakpoint(max-width 900px 8);
+
+$desktop: new-breakpoint(max-width 1280px 12);
+$desktop_large: new-breakpoint(min-width 1281px 12);
+
+
+
+// Colors
+$black:#000000;
+
+$white:#ffffff;
+
+	//Blues
+	$blue:#008CBA;
+		$blueShade:#0084A8;
+	$deepBlue: #004b60;
+		$darkDeepBlue : #27373F;
+	$lightBlueGreen : #45C8BC;
+	$blueGreen : #5CA09A;
+
+	//Orange
+	$orange : #F09720;
+
+	//Grays
+	$lightGray:#F4F1EF;
+	$gray : #E0DFDE;
+	$mediumGray : #BFBBB8;
+	$darkGray : #9E9A97;
+
+
+$brightBlue:#0074ff;

@@ -1,0 +1,24 @@
+* html { font-size: 112.5%; }
+html { font-size: 18px; line-height: 1.33333em; height: 100%; overflow-y: scroll; }
+
+html, body {
+	width:100%; height:100%;
+	background:$lightGray;
+}
+
+a, a:visited{  }
+a:hover{  }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:$plume; font-style:italic; font-weight:400; margin:0; padding:0; line-height:1em;}
+
+ul {
+	list-style:none; margin:0; padding:0;
+	li {
+		margin:0; padding:0;
+	}
+}
+
+main.pages {
+	width:100%; height:100%; padding:0; margin:0; overflow:hidden;
+}
